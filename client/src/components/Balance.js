@@ -9,7 +9,7 @@ export const Balance = () => {
 
     return (
         <>
-            <h4>Your Balance</h4>
+            <h4>Zůstatek</h4>
             <h1>{total} CZK</h1>
         </>
     )
