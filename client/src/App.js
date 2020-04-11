@@ -7,6 +7,8 @@ import { AddTransaction } from './components/AddTransaction';
 
 import { GlobalProvider } from './context/GlobalState';
 
+import { loadUser } from './actions/authActions';
+
 function App() {
   return (
     <GlobalProvider>
@@ -20,5 +22,4 @@ function App() {
     </GlobalProvider>
   );
 }
-
 export default App;

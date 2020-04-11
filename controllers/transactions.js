@@ -1,4 +1,5 @@
 const Transaction = require('../models/Transaction');
+const auth = require('../middleware/auths');
 
 // @desc    Get all transactions
 // @route   GET /api/v1/transactions

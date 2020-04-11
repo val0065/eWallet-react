@@ -19,6 +19,7 @@ if(process.env.NODE_ENV === 'development'){
 
 app.use('/api/v1/transactions', require('./routes/transactions.js'));
 app.use('/api/v1/users', require('./routes/users.js'));
+app.use('/api/v1/auth', require('./routes/auths.js'));
 
 if(process.env.NODE_ENV === 'production'){
     app.use(express.static('client/build'));
