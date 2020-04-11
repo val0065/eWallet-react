@@ -32,6 +32,7 @@ export default function(state = initialState, action) {
             };
         case LOGIN_SUCCESS:
         case REGISTER_SUCCESS:
+            localStorage.setItem('token', action.payload.token);
             return {
                 ...state,
                 ...action.payload,
@@ -51,6 +52,6 @@ export default function(state = initialState, action) {
                 isLoading: false
             }
         default:
-            state;
+            return state;
     }
 }
